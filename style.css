@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.logo {opacity: 1;}
 body {
   background: #fff;
   min-height: 2vh;
@@ -196,15 +196,16 @@ div .logo {
   margin-right: 300px;
   margin-bottom: 80px;
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
 .card1,
 .card2,
 .card3 {
-  display: grid;
+  display:-ms-grid;
   grid-template-rows: auto;
   text-align: start;
+  text-align: justify;
 }
 
 h2{
@@ -222,3 +223,4 @@ nav {
 h1 {
   position: absolute;
 }
+
