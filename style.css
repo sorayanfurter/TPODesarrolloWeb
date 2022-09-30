@@ -5,8 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-.logo {opacity: 1;}
-
+.logo {
+  opacity: 1;
+}
 
 body {
   background: #fff;
@@ -192,28 +193,30 @@ div .logo {
 .containercards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 60px;
   margin-top: 80px;
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 80px;
   font-size: 20px;
-  text-align: justify;
-}
-
-.card1,
-.card2,
-.card3 {
-  display:-ms-grid;
   grid-template-rows: auto;
-  text-align: start;
-  text-align: justify;
 }
 
-h2{
+.card{
+  display:inline;
+  grid-auto-rows: auto;
+  
+}
+
+.card img {
+  width:  328px;
+    height: 340px;
+    object-fit: cover;
+}
+
+h2 {
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 nav {
@@ -225,4 +228,3 @@ nav {
 h1 {
   position: absolute;
 }
-
