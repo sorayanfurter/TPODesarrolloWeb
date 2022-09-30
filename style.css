@@ -5,10 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.logo {
-  opacity: 1;
-}
-
+.logo {opacity: 1;}
 body {
   background: #fff;
   min-height: 2vh;
@@ -152,11 +149,10 @@ header.down {
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
   margin-top: 80px;
   margin-left: 300px;
   margin-right: 300px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   font-size: 20px;
   line-height: 20px;
 }
@@ -167,19 +163,26 @@ h1 {
   place-content: center;
   grid-column-start: 1;
   grid-column-end: 1;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   line-height: normal;
   padding-bottom: 10px;
   font-size: 40pt;
   margin-top: 20px;
+  
 }
 
-.content > p {
+.parrafos {
   display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 180px;
+  grid-template-columns: 2fr;
+  margin-top: 10px;
   font-weight: 600;
   line-height: normal;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}  
+
+.parrafos > p {
+  margin-bottom: 20px;
 }
 
 div .logo {
@@ -193,8 +196,8 @@ div .logo {
 .containercards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
-  margin-top: 80px;
+  gap: 70px;
+  margin-top: 10px;
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 80px;
@@ -202,21 +205,42 @@ div .logo {
   grid-template-rows: auto;
 }
 
-.card{
+.card {
   display:inline;
   grid-auto-rows: auto;
   
 }
 
-.card img {
-  width:  328px;
-    height: 340px;
-    object-fit: cover;
+.card p{
+  text-align: start;
+  text-overflow: initial;
+  margin: 0;
 }
 
-h2 {
+.card2 {
+  display:inline;
+  grid-auto-rows: auto;
+}
+
+.card2 img{
+
+  width: 1fr;
+  height: 480px;
+  object-fit: cover;
+  
+
+}
+
+.card img {
+  width: 1fr;
+  height: 340px;
+  object-fit: cover;
+}
+
+h2{
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 nav {
@@ -225,6 +249,5 @@ nav {
   align-items: center;
 }
 
-h1 {
-  position: absolute;
-}
+
+
