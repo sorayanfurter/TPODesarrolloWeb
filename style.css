@@ -258,6 +258,41 @@ h2 {
   padding-bottom: 20px;
 }
 
+.h3 {
+  display: grid;
+  color: #d3ba87;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  background-color: black;
+  font-style: normal;
+   
+  
+}
+
+.swiffy-slider {
+  display: grid;
+  gap: 60px;
+  font-size: 20px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  
+    
+}
+
+
+
 nav {
   display: grid;
   justify-content: center;
