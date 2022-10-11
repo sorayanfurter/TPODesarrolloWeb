@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="Contact-us.css" />
+    <script src="form-script.js"></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="imgppal">
+            <img src="/Imagenes/contact-us.jpg" width="100%"alt="" />
+            <!--<h1>WE'D LOVE TO HEAR FROM YOU</h1>-->
+      </div>
+    <div class="contenido">
+      <!--<div class="imagen">
+        <img src="https://images.pexels.com/photos/837268/pexels-photo-837268.jpeg" width="100%" alt="100%">
+        <h1>Contact Us</h1>
+        <p>+41 22 779 33 33</p>
+
+            <p>For reservations, reservation@ultimacollection.com</p>
+            
+            <p>For other enquiries, info@ultimacollection.com</p>
+      </div> -->
+      <div class="formulario">
+        <h2>CONTACT US</h2>
+        <div id="error_message"></div>
+
+        <form id="myform" onsubmit="return validation()">
+          <div class="input_field">
+            <input type="text" placeholder="Nombre Completo" id="nombre" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Asunto" id="asunto" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="E-mail" id="email" />
+          </div>
+          <div class="input_field">
+            <textarea placeholder="" id="mensaje"></textarea>
+          </div>
+          <div class="btn">
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    </main>
+  </body>
+</html>
