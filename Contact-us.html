@@ -7,14 +7,46 @@
     <title>Contact us</title>
     <link rel="stylesheet" href="Contact-us.css" />
     <script src="form-script.js"></script>
+    <script src="https://kit.fontawesome.com/a10aa34e8b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="wrapper">
+    <div class="wrapper">
+
+      <div class="header">
+        <header>
+         <div class="logo">
+           <img src="/Imagenes/LOGO HOTEL.png" width="5%" alt="" />
+         
+         <nav>
+           <a href="javascript:;" title="" class="btn">
+             <span></span>
+             <span></span>
+           </a>
+ 
+           <div class="menu">
+             <ul class="menu__list">
+               <li class="menu__item">
+                 <a href="index.html" title="" class="menu__link">Home</a>
+               </li>
+               <li class="menu__item">
+                 <a href="About-us.html" title="" class="menu__link">About Us</a>
+               </li>
+               <li class="menu__item">
+                 <a href="#" title="" class="menu__link">Rooms</a>
+               </li>
+               <li class="menu__item">
+                 <a href="Contact-us.html" title="" class="menu__link">Contact</a>
+               </li>
+             </ul>
+           </div>
+         </nav>
+        </header>
+      </div> 
       <div class="imgppal">
             <img src="/Imagenes/contact-us.jpg" width="100%"alt="" />
-            <!--<h1>WE'D LOVE TO HEAR FROM YOU</h1>-->
+            <!--<h1>We wanna hear from you</h1>-->
       </div>
-    <div class="contenido">
+      <div class="contenido">
       <!--<div class="imagen">
         <img src="https://images.pexels.com/photos/837268/pexels-photo-837268.jpeg" width="100%" alt="100%">
         <h1>Contact Us</h1>
@@ -24,8 +56,8 @@
             
             <p>For other enquiries, info@ultimacollection.com</p>
       </div> -->
-      <div class="formulario">
-        <h2>CONTACT US</h2>
+       <div class="formulario">
+        <h2>Contact Us</h2>
         <div id="error_message"></div>
 
         <form id="myform" onsubmit="return validation()">
@@ -41,12 +73,28 @@
           <div class="input_field">
             <textarea placeholder="" id="mensaje"></textarea>
           </div>
-          <div class="btn">
+          <div class="btn-form">
             <input type="submit" />
           </div>
         </form>
+       </div>
       </div>
+      <div class="footer">
+        <footer>
+           <div class="copyright">
+            
+             <h4>© 2022, FVK Hotels</h4>
+             
+           </div>
+           <div class="redes"> 
+            <a class="btn-redes" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="btn-redes" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="btn-redes" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="btn-redes" href="#"><i class="fa-brands fa-youtube"></i></a>
+           </div> 
+        </footer>
+       </div>
+      <script src="script.js"></script>
     </div>
-    </main>
   </body>
 </html>

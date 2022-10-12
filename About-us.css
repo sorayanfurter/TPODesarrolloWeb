@@ -6,23 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cormorant;
-}       
-   
-body{
-    background: white/* rgb(240, 235, 229)*/;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
-    width: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header header header header header"
-    "imgppal imgppal imgppal imgppal imgppal"
-    "contenido contenido contenido contenido contenido"
-    "footer footer footer footer footer";
-}
+}  
 
 /*NAV BAR*/
 
@@ -157,124 +141,153 @@ body{
 
   div .logo {
     display: grid;
-  
     place-items: center;
     text-align: center;
   }
-
   nav {
     display: grid;
     justify-content: center;
     align-items: center;
   }
 
+
+body{
+    background: white/*rgb(240, 235, 229)*/;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header header"
+                         "imgppal imgppal imgppal imgppal imgppal"
+                         "intro intro intro intro intro"
+                         "contenido contenido contenido contenido contenido"
+                         "footer footer footer footer footer";
+}
+
 .imgppal {
     display: grid;
     grid-area: imgppal;
     grid-column-start: 1;
     grid-column-end: 6;
-    
   }
- .imgppal h1{
-  margin-top: -300px;
-  vertical-align: middle;
-  text-align: center;
-  color: white/* #d3ba87*/;
-  font-size:50px;
-  
- } 
 
+.imgppal h1{
+ margin-top: -500px;
+ vertical-align: middle;
+ text-align: center;
+ 
+ color: white/*#d3ba87*/;
+ font-size:90px;
+ font-synthesis: weight;
+}
+
+.intro{
+    display: grid;
+    grid-area: intro;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-template-columns: 1fr;
+    margin: 90px 250px 90px 250px;
+        font-family: Cormorant;
+    
+}
+
+.intro h1{
+    font-size: 60px;
+    color: #B89535;
+    padding-bottom: 30px;
+}
+
+.intro h2{
+    padding-bottom: 30px;
+    font-size: 30px;
+    
+}
+
+.intro p{
+    padding-bottom: 20px ;
+    font-size: 20px;
+}
 
 .contenido{
     display: grid;
     grid-area: contenido;
-    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    gap: 30px;
-    vertical-align: middle;
-}
-/*
-.imagen{
-    display: grid;
-    grid-template-rows: auto;
     grid-column-start: 2;
-    grid-column-end: 3;
-    object-fit:cover;
-    grid-row-end: 2;
-}*/
-  .formulario {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    grid-column-end: 5;
+    margin-bottom: 60px;
+    text-align: center;
+    
+}
+
+.card{
     display: grid;
     grid-column-start: 2;
     grid-column-end: 5;
-    grid-template-rows: auto;
-     
-    box-sizing:content-box;
-   
-    /*box-shadow: rgb(211, 186, 135) 4px 4px 2px;*/
-    background-color: white/* rgb(240, 235, 229)*/;
-   /* padding: 25px 25px 25px 25px;*/
-    border-color: 1px solid rgb(211, 186, 135);
+    justify-content: space-between;
+    vertical-align: middle;
+    grid-template-columns: 1fr 1fr;
+    font-family: Cormorant;
+    margin:20px
+
+}
+.card2{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    justify-content: space-between;
+    vertical-align: middle;
+    grid-template-columns: 1fr 1fr;
+    font-family: Cormorant;
+    margin:20px
+
+}
+.card .copy{
+   padding: 80px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    vertical-align: middle;
 }
 
-.formulario h2{
-    text-align: center;
-    padding: 20px;
-    font-family: cormorant;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #d3ba87;
-    font-size: 70px;
-}
-
-.formulario .input_field{
-    margin-bottom: 10px ;
-    padding-right: 25px;
-    
- }
-
-.formulario .input_field input[type="text"],
-.formulario textarea{
-    width: 100%;
-    border: 1px solid #d3ba87;
-    padding: 10px;
-    
+.card2 .copy{
+    padding: 80px;
+     grid-column-start: 1;
+     grid-column-end: 2;
+     vertical-align: middle;
     
 }
 
-.formulario textarea{
-    height: 80px;
-    resize: none;
-
+.card2 .copy .texto{
+    font-size: 18px;
+}
+.card .copy .titulo{
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 
-.formulario .btn-form input[type="submit"]{
-    border: 0;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    padding: 10px;
-    width: 100%;
-    background-color: #d3ba87;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
-    border-radius: 20px;
-    font-family: cormorant;
+.card2 .copy .titulo{
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 
-.formulario #error_message{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 0px;
-    background: #fe8b8e;
-    text-align: center;
-    font-size: 14px;
-    transition: all 0.5s ease;
-    border-radius: 5px;
+.card .copy .texto{
+    font-size: 18px;
+}
+
+.card  img{
+    grid-template-columns: 1fr;
+    
+    height: 378.77px;
+    object-fit:contain;
+}
+
+.card2  img{
+    grid-template-columns: 1fr;
+    
+    height: 378.77px;
+    object-fit:contain;
 }
 
 footer {
