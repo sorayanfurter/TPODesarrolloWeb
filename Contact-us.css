@@ -191,7 +191,7 @@ body{
     grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
     margin-top: 40px;
     margin-bottom: 40px;
-    gap: 30px;
+    gap: 50px;
     vertical-align: middle;
 }
 /*
@@ -204,11 +204,12 @@ body{
     grid-row-end: 2;
 }*/
   .formulario {
+    display: grid;
     margin-top: 35px;
     margin-bottom: 35px;
     display: grid;
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 4;
     grid-template-rows: auto;
      
     box-sizing:content-box;
@@ -216,7 +217,7 @@ body{
     /*box-shadow: rgb(211, 186, 135) 4px 4px 2px;*/
     background-color: white/* rgb(240, 235, 229)*/;
    /* padding: 25px 25px 25px 25px;*/
-    border-color: 1px solid rgb(211, 186, 135);
+    border-color: 2px solid rgb(211, 186, 135);
 }
 
 .formulario h2{
@@ -264,7 +265,7 @@ body{
     cursor: pointer;
     border-radius: 20px;
     font-family: cormorant;
-    
+    ;
 }
 
 .formulario #error_message{
@@ -276,6 +277,14 @@ body{
     font-size: 14px;
     transition: all 0.5s ease;
     border-radius: 5px;
+}
+
+.googlemaps{
+  display: grid;
+  box-sizing: border-box;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-top: 35px;
 }
 
 footer {
