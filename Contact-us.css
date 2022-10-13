@@ -231,7 +231,7 @@ body{
 
 .formulario .input_field{
     margin-bottom: 10px ;
-    padding-right: 25px;
+   
     
  }
 
@@ -264,6 +264,7 @@ body{
     cursor: pointer;
     border-radius: 20px;
     font-family: cormorant;
+    
 }
 
 .formulario #error_message{
