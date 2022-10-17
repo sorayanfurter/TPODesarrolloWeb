@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
     <link rel="stylesheet" href="Contact-us.css" />
-    <script src="form-script.js"></script>
+    
     <script src="https://kit.fontawesome.com/a10aa34e8b.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,8 +15,8 @@
       <div class="header">
         <header>
          <div class="logo">
-           <img src="/Imagenes/LOGO HOTEL.png" width="5%" alt="" />
-         
+           <img src="/Imagenes/LOGO HOTEL.png" width="10%" alt="" />
+         </div>
          <nav>
            <a href="javascript:;" title="" class="btn">
              <span></span>
@@ -46,43 +46,42 @@
             <img src="/Imagenes/Copia de pexels-photo-7681745.jpeg" width="100%"alt="" />
             <!--<h1>We wanna hear from you</h1>-->
       </div>
-      <div class="contenido">
-      <!--<div class="imagen">
-        <img src="https://images.pexels.com/photos/837268/pexels-photo-837268.jpeg" width="100%" alt="100%">
-        <h1>Contact Us</h1>
-        <p>+41 22 779 33 33</p>
-
-            <p>For reservations, reservation@ultimacollection.com</p>
-            
-            <p>For other enquiries, info@ultimacollection.com</p>
-      </div> -->
-      
+      <div class="contenido">    
       
        <div class="formulario">
         <h2>Contact Us</h2>
+
         <div id="error_message"></div>
 
-        <form id="myform" onsubmit="return validation()">
+        <form id="form" class="form" onsubmit="return validation()" action="https://formspree.io/f/mqkjlndz"
+        method="POST">
           <div class="input_field">
-            <input type="text" placeholder="Nombre Completo" id="nombre" />
+            <input type="text" placeholder="Nombre completo" id="nombre" name="nombre" />
           </div>
           <div class="input_field">
-            <input type="text" placeholder="Asunto" id="asunto" />
+            <input type="text" placeholder="Asunto" id="asunto" name="asunto"/>
           </div>
           <div class="input_field">
-            <input type="text" placeholder="E-mail" id="email" />
+            <input type="text" placeholder="E-mail" id="email" name="email"/>
           </div>
           <div class="input_field">
-            <textarea placeholder="" id="mensaje"></textarea>
+            <textarea placeholder="" id="mensaje" name="mensaje"></textarea>
           </div>
           <div class="btn-form">
             <input type="submit" />
           </div>
+          <div><p id="my-form-status"></p></div>
         </form>
        </div>
        <div class="googlemaps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12013393.381581768!2d4.037909287796968!3d42.68344536847465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa700ed43f26ce8e9%3A0xa32b6e95e42d5dbf!2sUltima%20Collection!5e0!3m2!1ses-419!2sar!4v1665654737385!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12013393.381581768!2d4.037909287796968!3d42.68344536847465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa700ed43f26ce8e9%3A0xa32b6e95e42d5dbf!2sUltima%20Collection!5e0!3m2!1ses-419!2sar!4v1665654737385!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
+        <p>For reservations: <i class="fa-solid fa-envelope"></i> reservation@ultimacollection.com</p>
+        <p>For other enquiries: <i class="fa-solid fa-envelope"></i> info@ultimacollection.com</p>
+        <p><i class="fa-solid fa-phone"></i> +41 22 779 33 33</p>
+
+       </div>
+      
       </div>
       
       <div class="footer">
@@ -100,7 +99,40 @@
            </div> 
         </footer>
        </div>
+       <script src="form-script.js"></script>
       <script src="script.js"></script>
+     <!-- <script>var form = document.getElementById("my-form");
+    
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(validation => {
+            if (validation.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>--> 
+    
     </div>
   </body>
 </html>

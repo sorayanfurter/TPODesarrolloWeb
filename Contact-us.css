@@ -1,11 +1,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cormorant;
 }       
    
 body{
@@ -28,6 +27,7 @@ body{
 
 .logo {
     opacity: 1;
+    text-align: center;
   }
   
   .btn {
@@ -86,6 +86,7 @@ body{
     opacity: 0;
     visibility: hidden;
     background-attachment: scroll;
+    font-family: Raleway thin;
   }
   
   .menu.is-active {
@@ -153,13 +154,13 @@ body{
   header.down {
     background: #fff;
     padding: 30px 30px;
+    
   }
 
   div .logo {
     display: grid;
-  
-    place-items: center;
     text-align: center;
+    justify-items: center;
   }
 
   nav {
@@ -223,8 +224,8 @@ body{
 .formulario h2{
     text-align: center;
     padding: 20px;
-    font-family: cormorant;
-    text-transform: uppercase;
+    font-family: 'Italiana';
+   
     letter-spacing: 3px;
     color: #d3ba87;
     font-size: 70px;
@@ -264,13 +265,13 @@ body{
     color: black;
     cursor: pointer;
     border-radius: 20px;
-    font-family: cormorant;
-    ;
+    font-family: 'Italiana';
+    font-weight: 100;
 }
 
 .formulario #error_message{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    
+    margin-bottom: 20px;
     padding: 0px;
     background: #fe8b8e;
     text-align: center;
@@ -281,10 +282,19 @@ body{
 
 .googlemaps{
   display: grid;
-  box-sizing: border-box;
   grid-column-start: 4;
   grid-column-end: 5;
-  margin-top: 35px;
+  grid-template-rows: auto;
+  height: 350px;
+  text-align: right;
+  font-family: 'Lato';
+  font-weight: 100;
+  margin-top: 60px;
+  
+}
+
+.fa-solid fa-envelope{
+  color: #171717;
 }
 
 footer {
@@ -292,6 +302,8 @@ footer {
     padding: 30px 30px 30px 30px;
     background-color: #000;
     justify-content: space-between;
+    font-family: 'Italiana', serif;
+    font-weight: 100;
   }
   
   .footer {

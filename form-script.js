@@ -4,8 +4,9 @@ function validation(){
     var email = document.getElementById("email").value;
     var mensaje = document.getElementById("mensaje").value;
     var error_message = document.getElementById("error_message");
+   
 
-    error_message.style.padding = "10px";
+    error_message.style.padding = "5px";
 
     if(nombre.length <5){
         text= "Por favor, introduzca su nombre completo";
@@ -25,12 +26,14 @@ function validation(){
         return false;
     }
 
-    if(mensaje.length <= 100){
-        text= "Por favor, introduzca un mensaje completo";
+    if(mensaje.length <= 20){
+        text= "Por favor, introduzca mas de 20 caracteres";
         error_message.innerHTML = text;
         return false;
     }
-    alert("Mensaje enviado con éxito!")  
-    return true;
+    return true
 
-}
+    }
+
+    
+
