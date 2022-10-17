@@ -1,17 +1,9 @@
-document.querySelector('.btn').onclick = function (e) {
-    var menu = document.querySelector('.menu');
-    var btn = document.querySelector('.btn');
+const ham = document.querySelector('.toggle');
+const menu = document.querySelector('.menu')
 
-    menu.classList.toggle('is-active');
-    btn.classList.toggle('is-active');
-
-    e.preventDefault();
-
-
-}
- 
-
-window.addEventListener("scroll", function(){
-    var header = this.document.querySelector("header");
-    header.classList.toggle("down", window.scrollY>0);
+ham.addEventListener('click', ()=> {
+    menu.classList.toggle('activarMenu');
+    menu.classList.toggle('menu')
 })
+
+
