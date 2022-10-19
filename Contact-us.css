@@ -252,7 +252,7 @@ body{
 
 }
 
-.formulario .btn-form input[type="submit"]{
+.formulario .btn-form button[type="submit"]{
     border: 0;
     margin-top: 15px;
     margin-bottom: 25px;

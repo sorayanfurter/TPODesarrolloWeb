@@ -82,9 +82,7 @@
   background-attachment: scroll;
   font-family: Raleway thin;
 }
-hr{
-  width: 100%;
-}
+
 .menu.is-active {
   opacity: 1;
   visibility: visible;
