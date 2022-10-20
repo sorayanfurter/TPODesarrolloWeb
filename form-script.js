@@ -42,8 +42,6 @@ function validation() {
   let mensaje = document.querySelector("#mensaje");
   let error_message = document.querySelector("#error_message");
 
-  
-
   if (nombre.value.length < 5) {
     text = "Por favor, introduzca su nombre completo";
     error_message.innerHTML = text;
@@ -54,7 +52,7 @@ function validation() {
     error_message.innerHTML = text;
     return false;
   }
-  if (email.value.length < 6 ) {
+  if ( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(email.value)) {
     text = "Por favor, introduzca un E-mail válido";
     error_message.innerHTML = text;
     return false;
@@ -64,7 +62,7 @@ function validation() {
     error_message.innerHTML = text;
     return false;
   } else {
-    error_message.innerHTML="";
+    error_message.innerHTML = "";
     return true;
   }
 }
@@ -77,45 +75,29 @@ async function handleSubmit(event) {
   if (validation() === true) {
     var status = document.getElementById("my-form-status");
     const form = new FormData(this);
-    const response = await fetch("https://formspree.io/f/mqkjlndz", {
+    const data = await fetch("https://formspree.io/f/xoqbnrqy", {
       method: this.method,
       body: form,
       headers: {
         Accept: "application/json",
       },
+    }).then((response) => {
+      if (response.ok) {
+        
+        status.innerHTML = "Gracias por contactarnos :)!";
+        this.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
     });
-
-    if (response.ok) {
-      this.reset();
-      status.innerHTML = "Gracias por contactarnos :)!";
-    }
   }
 }
 
-/*
-        var status = document.getElementById("my-form-status");
-      var data = new FormData(form);
-      await fetch("", {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
-          form.reset()}})
-     }}
-      /*else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-              } else {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-              }
-            })
-          }
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-      }*/

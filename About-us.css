@@ -104,7 +104,7 @@ div .logo {
   font-size: 48px;
   color: #fff;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
 }
 
 .menu__link:after {
@@ -148,7 +148,7 @@ header {
 
 header.down {
   background: #fff;
-  padding: 30px 30px;
+  padding: 20px 20px;
 }
 
 nav {
@@ -430,7 +430,11 @@ footer {
     display: grid;
     place-items: center;
     text-align: center;
-   
+    
+  }
+
+  .logo{
+    opacity: 1;
   }
   
   .imgppal {
