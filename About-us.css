@@ -8,18 +8,13 @@
   box-sizing: border-box;
 }
 
-
 /*NAV BAR*/
 
 div .logo {
-  
   opacity: 1;
-  
+
   text-align: center;
- 
 }
-
-
 
 .btn {
   position: absolute;
@@ -142,8 +137,9 @@ header {
   width: 100%;
   transition: 0, 7s;
   padding: 30px 30px;
- text-align: center;
+  text-align: center;
   align-items: center;
+  z-index: 10;
 }
 
 header.down {
@@ -153,9 +149,7 @@ header.down {
 
 nav {
   display: grid;
-  
   text-align: center;
-  
 }
 
 body {
@@ -174,8 +168,6 @@ body {
     "footer footer footer footer footer";
 }
 
-
-
 .imgppal {
   display: grid;
   grid-area: imgppal;
@@ -183,16 +175,66 @@ body {
   grid-column-end: 6;
 }
 
-.imgppal h1 {
-  margin-top: -400px;
-  vertical-align: middle;
+.imgppal img {
+  animation: scale-down-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: scale-down-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*
+.text-focus-in {
   text-align: center;
   font-family: "Italiana";
-  color: white /*#d3ba87*/;
-  font-size: 90px;
-  font-synthesis: weight;
-  text-shadow: #171717;
+  font-weight: 100;
+  font-size: 40px;
+  margin-top: -550px;
+  color: #fff;
+  z-index: 1;
 }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}*/
 
 .intro {
   display: grid;
@@ -242,7 +284,6 @@ body {
   grid-column-end: 5;
   grid-template-columns: 1fr 1fr;
   margin: 20px;
-  
 }
 .card:nth-child(3) {
   margin-bottom: 100px;
@@ -268,7 +309,6 @@ body {
   padding: 70px 0px 70px 70px;
   text-align: left;
   width: 100%;
-  
 }
 
 .card2 .copy {
@@ -283,7 +323,6 @@ body {
   padding: 70px 70px 70px 0px;
   text-align: left;
   width: 100%;
-  
 }
 
 .card2 .copy .texto {
@@ -375,19 +414,12 @@ footer {
   vertical-align: middle;
 }
 
-@media screen and (min-width: 640px) and (max-width: 1280px) {
-  
-  .imgppal h1 {
-    margin-top: -200px;
-    vertical-align: middle;
-    text-align: center;
-    font-family: "Italiana";
-    color: white /*#d3ba87*/;
-    font-size: 50px;
-    font-synthesis: weight;
-    text-shadow: #171717;
-  }
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
 
+@media screen and (min-width: 640px) and (max-width: 1280px) {
   .intro {
     display: grid;
     grid-area: intro;
@@ -397,18 +429,17 @@ footer {
     grid-template-columns: 1fr;
     margin: 90px 30px 90px 30px;
   }
-  
+
   .card img {
-   height: 100%; 
+    height: 100%;
   }
-  
+
   .card2 img {
-   height: 100%;
+    height: 100%;
   }
-} 
+}
 
-@media screen and (min-width:320px) and (max-width: 640px) {
-
+@media (min-width: 320px) and (max-width: 640px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -425,87 +456,78 @@ footer {
     grid-area: header;
     grid-template-columns: 1fr;
   }
-  
+
   div .logo {
     display: grid;
     place-items: center;
     text-align: center;
-    
   }
 
-  .logo{
-    opacity: 1;
+  .menu {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
-  
+
+  .menu.is-active {
+    grid-area: header;
+    text-align: center;
+  }
+
+  .menu__list {
+    text-align: center;
+    justify-items: center;
+  }
+
   .imgppal {
     display: grid;
     grid-template-columns: 1fr;
     grid-area: imgppal;
-    
   }
 
   .intro {
-      display: grid;
-      grid-area: intro;
-      text-align: center;
-      grid-template-columns: 1fr ;
-      
-      margin: 60px 40px 60px 40px;
-      
+    display: grid;
+    grid-area: intro;
+    text-align: center;
+    grid-template-columns: 1fr;
+    margin: 30px 40px 60px 40px;
   }
 
   .intro h1 {
-      grid-template-columns: 1fr;
-      
-      font-size: 50px;
-      color: #b89535;
-      padding-bottom: 30px;
+    grid-template-columns: 1fr;
+    font-size: 50px;
+    padding-bottom: 30px;
+  
   }
-    
+
   .intro h2 {
-      font-size: 18px;
-      
+    font-size: 18px;
   }
-    
+
   .intro p {
-      padding-bottom: 20px;
-      font-size: 13px;
-      font-family: "Lato";
-      font-weight: 100;
+    padding-bottom: 20px;
+    font-size: 13px;
   }
 
   .contenido {
-      display: grid;
-      grid-area: contenido;
-      grid-template-columns: 1fr;
-      margin-bottom: 0px;
-      text-align: center;
-      margin-top: -50px;
+    display: grid;
+    grid-area: contenido;
+    grid-template-columns: 1fr;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: -50px;
   }
   .card {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     margin: 20px;
-    
-  }
-  
-  .card2 {
-    display: grid;
-        grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr ;
-    margin: 20px;
-    
-  }
-    
- .card .copy {
-    display: grid;
-    justify-content: left;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    padding: 15px 15px 0px 15px;
-       
   }
 
+  .card2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
 
   .card2 .copy {
     display: grid;
@@ -514,64 +536,51 @@ footer {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 2;  
-      
-      
-   
-      
+    grid-row-end: 2;
   }
- .card img {
-   display: grid;
-   grid-template-columns: 1fr;   
-  
-      
+  .card img {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .card2 img {
     display: grid;
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
     grid-row-start: 1;
     grid-row-end: 1;
-       
-   }
+  }
 
+  .card .copy {
+    display: grid;
+    justify-content: left;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 15px 15px 0px 15px;
+  }
   .card .copy .titulo {
-    font-size: 30px; 
+    font-size: 30px;
   }
-
   .card2 .copy .titulo {
-    font-size: 30px; 
+    font-size: 30px;
   }
-  
-  .card .copy .texto{
+
+  .card .copy .texto {
     font-size: 15px;
   }
 
-  .card2 .copy .texto{
+  .card2 .copy .texto {
     font-size: 15px;
   }
-  
+
   .btn-redes {
-    
-    width: 40px;
-    height: 40px;
-    
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
   }
 
   .btn-redes i {
-    line-height: 40px;
+    line-height: 30px;
     font-size: 20px;
     transition: 0.2s linear;
   }
-
-} 
-
-
-
-
-
-
-
-
-
-
+}
