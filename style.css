@@ -356,17 +356,18 @@ header.down {
 
 .content .titulo h1 {
   margin-bottom: 30px;
-  line-height: 95px;
-  font-size: 70pt;
+  line-height: 85px;
+  font-size: 55pt;
   margin-top: 20px;
   font-family: "Italiana", serif;
   font-weight: 100;
+  width: 700px;
 }
 
 .content2 .titulo h1 {
   margin-bottom: 30px;
   line-height: 65px;
-  font-size: 55pt;
+  font-size: 45pt;
   margin-top: 20px;
   width: 500;
   font-family: "Italiana", serif;
@@ -384,7 +385,7 @@ header.down {
   width: 700px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 23px;
+  font-size: 21px;
 }
 
 .parrafos p {
@@ -416,7 +417,7 @@ header.down {
   margin: 0;
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  font-size: medium;
+  font-size:large;
 }
 
 .card img {
@@ -430,7 +431,7 @@ header.down {
   grid-auto-rows: auto;
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  font-size: medium;
+  font-size: large;
 }
 
 .card2 img {
@@ -444,6 +445,7 @@ h2 {
   padding-bottom: 20px;
   font-family: "Italiana", serif;
   font-weight: 100;
+  font-size: 30px;
 }
 
 footer {
