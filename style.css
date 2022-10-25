@@ -280,14 +280,15 @@ h2 {
 .slideshow-container {
   max-width: none;
   position: relative;
-  grid-column-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 5;
   
   
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: grid;
 }
 
 /* Next & previous buttons */
@@ -366,8 +367,8 @@ h2 {
 }
   
   .imagencarrousel {
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: auto;
     
 
   }  
