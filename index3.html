@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestras Cabañas</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="index3.css" rel="stylesheet" />
     <link rel="icon" type="favicon" href="/Favicon/LOGO HOTEL.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/LOGO HOTEL.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/LOGO HOTEL.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/LOGO HOTEL.ico" />
     <link rel="manifest" href="/site.webmanifest" />
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a10aa34e8b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -55,30 +53,58 @@
     
          
 
+  
   <div class="h3">
-    <h3>Nuestras cabañas, contamos con 45 cabañas standard; 10 cabañas suites y 1 cabaña
+    <h3><span style="color: #101010">Nuestras cabañas,</span> contamos con 45 cabañas standard; 10 cabañas suites y 1 cabaña
       presidencial con piscina privada. Cuidamos cada detalle del primero al ultimo para que usted solo se preocupe de disfrutar, del resto nos ocupamos nosotros.
+             
     </h3>  
   </div>
-
-  <div class="swiffy-slider">
-      <ul class="slider-container">
-          <li><img src="/Imagenes/card2-img1.jpeg" style="width: 100%;height: auto;"></li>
-          <li><img src="/Imagenes/card-img2.jpeg" style="width: 100%;height: auto;"></li>
-          <li><img src="/Imagenes/card-img3.jpeg" style="width: 100%;height: auto;"></li>
-      </ul>
   
-      <button type="button" class="slider-nav"></button>
-      <button type="button" class="slider-nav slider-nav-next"></button>
-  
-      <div class="slider-indicators">
-          <button class="active"></button>
-          <button></button>
-          <button></button>
-      </div>
+    <div class="slideshow-container">
 
       
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="imagencarrousel" src="/Imagenes/slider-corfu-greece.jpeg" style="width:100%">
+        <div class="text"></div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="imagencarrousel" src="/Imagenes/slider-CourchevelBelvedere-France.jpg" style="width:100%" >
+        <div class="text"></div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img  class="imagencarrousel" src="/Imagenes/slider-cransmontana-suiza.jpg" style="width:100%;">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img  class="imagencarrousel" src="/Imagenes/slider-grandvilla-suiza.jpg" style="width:100%;">
+        <div class="text"></div>
+      </div>
+     
+      
+      <div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+     
+    
+     
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+        
+
+        
+    </div>
   
 
   <div class="footer">
