@@ -306,14 +306,15 @@ body {
   vertical-align: middle;
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  padding: 70px 0px 70px 70px;
+  padding: 70px 70px 70px 70px;
   text-align: left;
   width: 100%;
+  align-self: center;
 }
 
 .card2 .copy {
   display: grid;
-
+  align-self: center;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-template-columns: 1fr;
@@ -331,13 +332,13 @@ body {
 }
 .card .copy .titulo {
   display: grid;
-  font-size: 40px;
-  padding-bottom: 0px;
+  font-size: 50px;
+  grid-row: 1fr;
   font-family: "Italiana";
 }
 
 .card2 .copy .titulo {
-  font-size: 40px;
+  font-size: 50px;
   padding-bottom: 0px;
   font-family: "Italiana";
 }
@@ -490,14 +491,13 @@ footer {
     grid-area: intro;
     text-align: center;
     grid-template-columns: 1fr;
-    margin: 30px 40px 60px 40px;
+    margin: 60px 40px 60px 40px;
   }
 
   .intro h1 {
     grid-template-columns: 1fr;
     font-size: 50px;
     padding-bottom: 30px;
-  
   }
 
   .intro h2 {
@@ -555,7 +555,8 @@ footer {
     justify-content: left;
     grid-column-start: 1;
     grid-column-end: 5;
-    padding: 15px 15px 0px 15px;
+    padding: 50px 50px 0px 50px;
+    position: relative;
   }
   .card .copy .titulo {
     font-size: 30px;
