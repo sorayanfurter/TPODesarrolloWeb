@@ -171,23 +171,62 @@ body{
   }
 
 
-.imgppal {
-  display: grid;
-  grid-area: imgppal;
-  grid-column-start: 1;
-  grid-column-end: 6;
-}
-
-.text-focus-in{
-  text-align: center;
-  font-family: 'Italiana';
-  font-weight: 100;
-  font-size: 40px;
-  margin-top: -600px;
-  color: #fff;
-  z-index: 1;
-}
-
+  .imgppal {
+    display: grid;
+    grid-area: imgppal;
+    grid-template-areas: "overlay";
+       
+  }
+  
+  .img-div {
+   grid-area: overlay;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+   
+  }
+  
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  .tituloppal{
+    display: grid;
+    grid-area: overlay;
+    z-index: 2;
+    align-items: center;
+  }
+  
+  .tituloppal h1{
+    display: grid;
+    justify-items: center;
+    justify-content:center;
+    font-family: "Italiana";
+    font-weight: 100;
+    font-size: 100px;
+    color: #fff;
+    
+  }
 nav {
   display: grid;
   justify-content: center;

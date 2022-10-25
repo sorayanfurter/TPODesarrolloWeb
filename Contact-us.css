@@ -170,10 +170,15 @@ nav {
 .imgppal {
   display: grid;
   grid-area: imgppal;
-  grid-column-start: 1;
-  grid-column-end: 6;
+  grid-template-areas: "overlay";
+     
+}
+
+.img-div {
+ grid-area: overlay;
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+ 
 }
 
 @-webkit-keyframes text-focus-in {
@@ -199,6 +204,24 @@ nav {
             filter: blur(0px);
     opacity: 1;
   }
+}
+
+.tituloppal{
+  display: grid;
+  grid-area: overlay;
+  z-index: 2;
+  align-items: center;
+}
+
+.tituloppal h1{
+  display: grid;
+  justify-items: center;
+  justify-content:center;
+  font-family: "Italiana";
+  font-weight: 100;
+  font-size: 140px;
+  color: #fff;
+  
 }
 
 .titulo {
@@ -299,7 +322,7 @@ nav {
   padding: 0px;
   background: #fe8b8e;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   transition: all 0.5s ease;
   border-radius: 5px;
 }
