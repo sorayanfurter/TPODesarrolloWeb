@@ -32,6 +32,7 @@ nav {
   display: grid;
   justify-content: center;
   align-items: center;
+  z-index: 11;
 }
 .btn {
   position: absolute;
@@ -57,7 +58,7 @@ nav {
 }
 
 .btn span:nth-child(2) {
-  top: 80%;
+  top: 70%;
 }
 
 .btn.is-active span {
@@ -133,12 +134,13 @@ nav {
   width: 100%;
 }
 
-a:hover {
+.menu__link a:hover {
   font-style: italic;
   color: #d3ba87;
 }
 header nav a:hover {
   font-style: italic;
+  color: #d3ba87;
 }
 .header {
   grid-area: header;
@@ -152,6 +154,8 @@ header {
   transition: 0, 7s;
   padding: 30px 30px;
   text-align: center;
+  z-index: 2;
+  
 }
 
 header.down {
@@ -166,9 +170,11 @@ header.down {
   grid-column-start: 1;
   grid-column-end: 6;
   overflow: hidden;
+  
+  
 }
-.img-ppal ::after,
-.img-ppal::before {
+.slider ::after,
+.slider::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -187,9 +193,39 @@ header.down {
   height: auto;
 }
 
+.tituloppal {
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-area: imgppal;
+ align-items: center;
+ justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-area: overlay;
+  z-index: 1;
+  justify-items: center;
+
+}
+
+.tituloppal h1 {
+  display: grid;
+  vertical-align: middle;
+ 
+  grid-column-start: 1;
+  grid-column-end: 6;
+  align-items: center;
+  justify-content: center;
+  font-family: "Italiana";
+  font-weight: 100;
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+}
+
 .img-ppal img {
   grid-area: imgppal;
   width: 100%;
+  
   /*
  top: 50%;
   left: 50%;
@@ -296,7 +332,6 @@ header.down {
   font-family: "Italiana";
   font-weight: 100;
   font-size: 35px;
-
   color: #fff;
   z-index: 1;
 }
@@ -342,6 +377,36 @@ header.down {
   line-height: 20px;
 }
 
+.calltoact {
+  display: inline-flex;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding: 5px 5px 5px 5px;
+  margin-top: 50px;
+}
+a:link {
+  text-decoration: none;
+}
+
+.calltoacto a:visited {
+  text-decoration: none;
+}
+
+.calltoacto a:hover {
+  text-decoration: none;
+}
+
+.calltoacto a:active {
+  text-decoration: none;
+}
+
+.calltoact h3 {
+  margin-left: 10px;
+  font-family: "Italiana";
+  font-weight: 400;
+}
 .content2 {
   display: grid;
   grid-area: content2;
@@ -349,15 +414,15 @@ header.down {
   margin-top: 30px;
   grid-column-start: 2;
   grid-column-end: 5;
-  margin-bottom: 100px;
-  font-size: 20px;
+  margin-bottom: 200px;
+  font-size: 15px;
   line-height: 20px;
 }
 
 .content .titulo h1 {
   margin-bottom: 30px;
   line-height: 85px;
-  font-size: 55pt;
+  font-size: 50pt;
   margin-top: 20px;
   font-family: "Italiana", serif;
   font-weight: 100;
@@ -379,13 +444,13 @@ header.down {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 2;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
   line-height: normal;
   width: 700px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .parrafos p {
@@ -417,7 +482,7 @@ header.down {
   margin: 0;
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  font-size:large;
+  font-size: medium;
 }
 
 .card img {
@@ -431,7 +496,7 @@ header.down {
   grid-auto-rows: auto;
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  font-size: large;
+  font-size: medium;
 }
 
 .card2 img {

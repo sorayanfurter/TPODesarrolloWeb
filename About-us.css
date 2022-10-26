@@ -40,7 +40,7 @@ div .logo {
 }
 
 .btn span:nth-child(2) {
-  top: 80%;
+  top: 70%;
 }
 
 .btn.is-active span {
@@ -229,41 +229,7 @@ body {
   color: #fff;
   
 }
-/*
-.text-focus-in {
-  text-align: center;
-  font-family: "Italiana";
-  font-weight: 100;
-  font-size: 40px;
-  margin-top: -550px;
-  color: #fff;
-  z-index: 1;
-}
 
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}*/
 
 .intro {
   display: grid;
@@ -313,7 +279,7 @@ body {
   grid-column-start: 2;
   grid-column-end: 5;
   grid-template-columns: 1fr 1fr;
-  margin: 20px;
+  margin: 10px;
 }
 .card:nth-child(3) {
   margin-bottom: 100px;
@@ -324,7 +290,7 @@ body {
   grid-column-start: 2;
   grid-column-end: 5;
   justify-content: space-between;
-  margin: 20px;
+  margin: 10px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -585,7 +551,7 @@ footer {
     justify-content: left;
     grid-column-start: 1;
     grid-column-end: 5;
-    padding: 50px 50px 0px 50px;
+    padding: 15px 15px 0px 10px;
     position: relative;
   }
   .card .copy .titulo {
