@@ -184,8 +184,7 @@ header.down {
 .slider {
   grid-area: imgppal;
   grid-template-columns: 1fr;
-  grid-column-start: 1;
-  grid-column-end: 6;
+
   overflow: hidden;
   top: 0;
   left: 0;
