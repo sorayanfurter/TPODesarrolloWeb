@@ -224,11 +224,6 @@ nav {
   font-size: 85px;
   color: #fff;
 }
-nav {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
 
 .container {
   grid-area: container;
@@ -253,6 +248,104 @@ nav {
   font-family: "Lato";
   font-weight: 100;
 }
+
+.slideshow-container {
+  max-width: none;
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  height: auto;
+
+  margin: 50px 0px 30px 0px;
+  
+}
+
+.mySlides {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.prev, .next {
+  display: grid;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 1.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: rgb(13, 13, 13);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.3s ease; 
+  
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+  .imagencarrousel {
+    width: auto;
+    height: auto;
+    
+
+  }  
+
+
 .container2 {
   display: grid;
   grid-area: container2;
