@@ -212,7 +212,7 @@ header.down {
   align-items: center;
   justify-content: center;
   font-family: "Italiana";
-  font-weight: 100;
+  font-weight: 300;
   font-size: 70px;
   text-align: center;
   color: #fff;
@@ -393,7 +393,7 @@ header.down {
   line-height: normal;
   width: 700px;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -464,7 +464,7 @@ a:link {
   line-height: normal;
   max-width: 700px;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -493,7 +493,7 @@ a:link {
   text-align: start;
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 17px;
   line-height: 20px;
 }
@@ -507,7 +507,7 @@ a:link {
 .card2 {
   max-width: 1fr;
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 17px;
 }
 
