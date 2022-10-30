@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="favicon" href="/Favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>F.V.K Collection</title>
+    <link rel="stylesheet" href="Contact-us.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a10aa34e8b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      
+        <header>
+          <div class="logo">
+            <a href="/index.html"><img src="/Logo/LOGO HOTELb.png" width="15%"alt="" /> </div></a>
+          <nav>
+            <a href="javascript:;" title="" class="btn">
+              <span></span>
+              <span></span>
+            </a>
+
+            <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" title="" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="About-us.html" title="" class="menu__link"
+                    >About Us</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="Collection.html" title="" class="menu__link"
+                    >The Collection</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="Contact-us.html" title="" class="menu__link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            
+          </nav>
+          
+        </header>
+           
+      <div class="imgppal">
+        <div class="img-div">
+          <img src="/Imagenes/Contact-us-bg.jpg" width="100%" alt="" />
+        </div>
+        <div class="tituloppal"><h1>Get in Touch</h1></div>
+      </div>
+
+      <main class="contenido">
+        <div class="titulo">
+          <h1>We want to hear <span style="color: #b89535">from you</span></h1>
+        </div>
+        <div class="copy">
+          <p>
+            Stretching from the Alps to the Mediterranean, our Collection has a
+            stylishly curated space for every need, come winter or summer. Speak
+            to the reservation team to find the right dates and destination for
+            your Ultima experience.
+          </p>
+        </div>
+        <section class="formulario">
+          <h2>CONTACT US</h2>
+
+          <form
+            id="form"
+            class="form"
+            action="https://formspree.io/f/xoqbnrqy"
+            onsubmit="return validation()"
+            method="POST"
+          >
+            <div id="error_message"></div>
+            <div id="my-form-status"></div>
+            <div class="input_field">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="nombre"
+                name="nombre"
+              />
+            </div>
+            <div class="input_field">
+              <input
+                type="text"
+                placeholder="Subject"
+                id="asunto"
+                name="asunto"
+              />
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="E-mail" id="email" name="email" />
+            </div>
+            <div class="input_field">
+              <textarea placeholder="" id="mensaje" name="mensaje"></textarea>
+            </div>
+            <div class="btn-form">
+              <button type="submit">SUBMIT</button>
+            </div>
+          </form>
+        </section>
+        <section class="googlemaps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12013393.381581768!2d4.037909287796968!3d42.68344536847465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa700ed43f26ce8e9%3A0xa32b6e95e42d5dbf!2sUltima%20Collection!5e0!3m2!1ses-419!2sar!4v1665654737385!5m2!1ses-419!2sar"
+            width="400"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section class="mails">
+          <p>
+            For reservations:
+            <i class="fa-solid fa-envelope"></i>
+            reservation@ultimacollection.com
+          </p>
+          <p>
+            For other enquiries:
+            <i class="fa-solid fa-envelope"></i> info@ultimacollection.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +41 22 779 33 33</p>
+        </section>
+        
+        
+      </main>
+
+      <div class="footer">
+        <footer>
+          <div class="copyright">
+            <h4>© 2022, FVK Collection</h4>
+          </div>
+          <div class="redes">
+            <a class="btn-redes" href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a class="btn-redes" href="https://www.linkedin.com/" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a class="btn-redes" href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a class="btn-redes" href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a class="btn-redes" href="https://wa.me/541162243229" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </footer>
+      </div>
+      <script src="form-script.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
