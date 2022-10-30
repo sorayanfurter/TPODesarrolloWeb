@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -171,7 +172,6 @@ header.down {
   grid-column-end: 6;
   overflow: hidden;
   grid-template-areas: "overlay";
-  
 }
 .slider ::after,
 .slider::before {
@@ -193,7 +193,7 @@ header.down {
   height: auto;
 }
 
-.img-div{
+.img-div {
   grid-area: overlay;
 }
 .tituloppal {
@@ -203,10 +203,7 @@ header.down {
   display: grid;
   grid-area: overlay;
   z-index: 1;
-  
 }
-
-
 
 .tituloppal h1 {
   display: grid;
@@ -217,26 +214,18 @@ header.down {
   justify-content: center;
   font-family: "Italiana";
   font-weight: 100;
-  font-size: 75px;
+  font-size: 70px;
   text-align: center;
   color: #fff;
 }
 
 .img-div {
   display: grid;
- 
   grid-area: imgppal;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-area: overlay;
   margin: 0;
-  
-
-  /*
- top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: scale-down-center 6s  infinite;*/
 }
 
 .banner {
@@ -366,23 +355,59 @@ header.down {
 .content {
   display: grid;
   grid-area: content;
-  justify-content: space-between;
   margin-top: 100px;
   grid-column-start: 2;
   grid-column-end: 5;
+  grid-template-rows: auto;
   font-size: 20px;
   line-height: 20px;
 }
 
+.containercards {
+  display: grid;
+  gap: 60px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.titulo h1 {
+  display: grid;
+  margin-bottom: 30px;
+  line-height: 85px;
+  font-size: 50pt;
+  margin-top: 20px;
+  font-family: "Italiana", serif;
+  font-weight: 100;
+  width: 1fr;
+}
+
+.parrafos {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-template-rows: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: normal;
+  width: 700px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
 .calltoact {
   display: inline-flex;
+  grid-area: content;
   width: 100%;
-  
   grid-column-start: 3;
   grid-column-end: 4;
   padding: 5px 0px 5px 5px;
-  margin-top: 50px;
+  margin-top: 20px;
   justify-content: end;
+  align-items: flex-end;
 }
 a:link {
   text-decoration: none;
@@ -405,30 +430,20 @@ a:link {
   font-family: "Italiana";
   font-weight: 400;
 }
+
 .content2 {
   display: grid;
   grid-area: content2;
-  justify-content: space-between;
   margin-top: 30px;
   grid-column-start: 2;
   grid-column-end: 5;
+  grid-template-rows: auto;
   margin-bottom: 200px;
   font-size: 15px;
   line-height: 20px;
 }
 
-.titulo h1 {
-  display: grid;
-  margin-bottom: 30px;
-  line-height: 85px;
-  font-size: 50pt;
-  margin-top: 20px;
-  font-family: "Italiana", serif;
-  font-weight: 100;
-  width: 1fr;
-}
-
- .titulo2 h1 {
+.titulo2 h1 {
   display: grid;
   margin-bottom: 30px;
   line-height: 65px;
@@ -440,14 +455,15 @@ a:link {
   letter-spacing: 2px;
 }
 
-.parrafos {
+.parrafos2 {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 2;
+  grid-auto-rows: auto;
   margin-top: 10px;
   margin-bottom: 30px;
   line-height: normal;
-  width: 700px;
+  max-width: 700px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -457,33 +473,19 @@ a:link {
   padding-bottom: 30px;
 }
 
-.containercards {
-  display: grid;
-  gap: 60px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  font-size: 20px;
-  
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-}
-
 .containercards2 {
   display: grid;
-  
   gap: 60px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 20px;
-  
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
 
 .card {
-  width: 1fr;
+  max-width: 1fr;
   height: auto;
-  font-family: Raleway thin;
   font-size: medium;
 }
 
@@ -494,6 +496,7 @@ a:link {
   font-family: "Lato", sans-serif;
   font-weight: 100;
   font-size: medium;
+  line-height: 20px;
 }
 
 .card img {
@@ -503,15 +506,14 @@ a:link {
 }
 
 .card2 {
-  width: 1fr;
-
+  max-width: 1fr;
   font-family: "Lato", sans-serif;
   font-weight: 100;
   font-size: medium;
 }
 
 .card2 img {
-  width: 1fr;
+  max-width: 1fr;
   height: 480px;
   object-fit: cover;
 }

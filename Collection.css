@@ -13,7 +13,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
-  width: 100%;
+  
   grid-template-rows: auto;
   grid-template-areas:
     "header header header header header"
@@ -26,9 +26,11 @@ body {
 /*NAV BAR*/
 
 .logo {
+  display: grid;
   opacity: 1;
   text-align: center;
 }
+
 
 .btn {
   position: absolute;
@@ -159,11 +161,7 @@ header.down {
   padding: 20px 20px;
 }
 
-div .logo {
-  display: grid;
-  text-align: center;
-  justify-items: center;
-}
+
 
 nav {
   display: grid;
@@ -231,7 +229,6 @@ nav {
   grid-column-end: 5;
   text-align: center;
   justify-content: center;
-
   height: auto;
   background-color: #fff;
   margin: 100px 40px 50px 40px;
@@ -353,8 +350,6 @@ nav {
   grid-column-start: 2;
   grid-column-end: 5;
   text-align: center;
-
-  background-color: #fff;
   margin-bottom: 50px;
 }
 
@@ -447,29 +442,3 @@ h4 {
   line-height: 50px;
 }
 
-.scale-down-center {
-  -webkit-animation: scale-down-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    forwards;
-  animation: scale-down-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
-@-webkit-keyframes scale-down-center {
-  0% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes scale-down-center {
-  0% {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}

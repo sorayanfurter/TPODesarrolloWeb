@@ -12,7 +12,6 @@
 
 div .logo {
   opacity: 1;
-
   text-align: center;
 }
 
@@ -217,15 +216,11 @@ body {
 
 .tituloppal h1{
   display: grid;
-  
-
   justify-items: center;
   justify-content:center;
-  
   font-family: "Italiana";
-  font-weight: 80;
+  font-weight: 100;
   font-size: 100px;
-  
   color: #fff;
   
 }
@@ -334,6 +329,7 @@ body {
 }
 
 .card2 .copy .titulo {
+  grid-row: 1fr;
   font-size: 50px;
   padding-bottom: 0px;
   font-family: "Italiana";
@@ -350,7 +346,7 @@ body {
   object-fit: cover;
   height: 378.77px;
   width: 100%;
-  height: auto;
+  
 }
 
 .card2 img {
@@ -358,7 +354,7 @@ body {
   object-fit: cover;
   grid-template-columns: 1fr;
   width: 100%;
-  height: auto;
+  
 }
 
 footer {
@@ -416,7 +412,7 @@ footer {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-@media screen and (min-width: 640px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .intro {
     display: grid;
     grid-area: intro;
@@ -428,15 +424,17 @@ footer {
   }
 
   .card img {
+    width: 1fr;
     height: 100%;
   }
 
   .card2 img {
+    width: 1fr;
     height: 100%;
   }
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 767.99px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -458,6 +456,7 @@ footer {
     display: grid;
     place-items: center;
     text-align: center;
+    
   }
 
   .menu {
@@ -481,6 +480,10 @@ footer {
     grid-template-columns: 1fr;
     grid-area: imgppal;
   }
+  .tituloppal h1{
+    font-size: 70px;
+    margin-top:60px;
+  }
 
   .intro {
     display: grid;
@@ -492,8 +495,9 @@ footer {
 
   .intro h1 {
     grid-template-columns: 1fr;
-    font-size: 50px;
+    font-size: 52px;
     padding-bottom: 30px;
+    margin-top: -10px;
   }
 
   .intro h2 {
@@ -502,7 +506,7 @@ footer {
 
   .intro p {
     padding-bottom: 20px;
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .contenido {
@@ -579,5 +583,8 @@ footer {
     line-height: 30px;
     font-size: 20px;
     transition: 0.2s linear;
+  }
+  .copyright{
+    font-size: 12px;
   }
 }
