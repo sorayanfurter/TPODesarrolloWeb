@@ -141,10 +141,9 @@ a:hover {
 header nav a:hover {
   font-style: italic;
 }
-.header {
-  grid-area: header;
-}
+
 header {
+  grid-area: header;
   display: grid;
   position: fixed;
   top: 0;
@@ -219,7 +218,7 @@ nav {
   justify-content: center;
   font-family: "Italiana";
   font-weight: 100;
-  font-size: 75px;
+  font-size: 70px;
   color: #fff;
 }
 
@@ -236,7 +235,7 @@ nav {
 
 .container h1 {
   font-family: "Italiana";
-  font-size: 60px;
+  font-size: 50pt;
   font-weight: 100;
   margin-bottom: 30px;
   margin-top: 40px;
@@ -244,7 +243,8 @@ nav {
 
 .container h2 {
   font-family: "Lato";
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .slideshow-container {
@@ -385,8 +385,7 @@ nav {
   color: #d3ba87;
 }
 
-.card-copy h2{
-  
+.card-copy h2{ 
   font-size: large;
 }
 

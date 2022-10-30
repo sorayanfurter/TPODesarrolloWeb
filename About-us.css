@@ -123,13 +123,10 @@ a:hover {
 header nav a:hover {
   font-style: italic;
 }
-.header {
-  grid-area: header;
-  text-align: center;
-}
 
 header {
   display: grid;
+  grid-area: header;
   position: fixed;
   top: 0;
   left: 0;
@@ -152,7 +149,7 @@ nav {
 }
 
 body {
-  background: white /*rgb(240, 235, 229)*/;
+  background: white ;
 }
 
 .wrapper {
@@ -171,60 +168,54 @@ body {
   display: grid;
   grid-area: imgppal;
   grid-template-areas: "overlay";
-  
-  
-  
 }
 
 .img-div {
- grid-area: overlay;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
- 
+  grid-area: overlay;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
-.tituloppal{
+.tituloppal {
   display: grid;
   grid-area: overlay;
   z-index: 2;
   align-items: center;
 }
 
-.tituloppal h1{
+.tituloppal h1 {
   display: grid;
   justify-items: center;
-  justify-content:center;
+  justify-content: center;
   font-family: "Italiana";
   font-weight: 100;
   font-size: 100px;
   color: #fff;
-  
 }
-
 
 .intro {
   display: grid;
@@ -234,7 +225,6 @@ body {
   grid-column-end: 5;
   grid-template-columns: 1fr;
   margin: 90px 150px 90px 150px;
-  
 }
 
 .intro h1 {
@@ -346,7 +336,6 @@ body {
   object-fit: cover;
   height: 378.77px;
   width: 100%;
-  
 }
 
 .card2 img {
@@ -354,7 +343,6 @@ body {
   object-fit: cover;
   grid-template-columns: 1fr;
   width: 100%;
-  
 }
 
 footer {
@@ -456,7 +444,6 @@ footer {
     display: grid;
     place-items: center;
     text-align: center;
-    
   }
 
   .menu {
@@ -480,9 +467,9 @@ footer {
     grid-template-columns: 1fr;
     grid-area: imgppal;
   }
-  .tituloppal h1{
+  .tituloppal h1 {
     font-size: 70px;
-    margin-top:60px;
+    margin-top: 60px;
   }
 
   .intro {
@@ -501,7 +488,7 @@ footer {
   }
 
   .intro h2 {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .intro p {
@@ -584,7 +571,7 @@ footer {
     font-size: 20px;
     transition: 0.2s linear;
   }
-  .copyright{
+  .copyright {
     font-size: 12px;
   }
 }

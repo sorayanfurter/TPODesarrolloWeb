@@ -136,11 +136,10 @@ a:hover {
 header nav a:hover {
   font-style: italic;
 }
-.header {
-  grid-area: header;
-}
+
 header {
   display: grid;
+  grid-area: header;
   position: fixed;
   top: 0;
   left: 0;
@@ -224,13 +223,13 @@ nav {
 .titulo {
   display: grid;
   text-align: center;
-  color: black;
   grid-column-start: 2;
   grid-column-end: 5;
-  font-family: "Italiana";
+  font-family: 'Italiana';
   font-weight: 100;
   font-size: 35px;
   text-align: center;
+  margin-top: 70px;
 }
 
 .copy {

@@ -144,11 +144,10 @@ header nav a:hover {
   font-style: italic;
   color: #d3ba87;
 }
-.header {
-  grid-area: header;
-}
+
 header {
   display: grid;
+  grid-area: header;
   position: fixed;
   top: 0;
   left: 0;
@@ -377,7 +376,7 @@ header.down {
   display: grid;
   margin-bottom: 30px;
   line-height: 85px;
-  font-size: 50pt;
+  font-size: 70px;
   margin-top: 20px;
   font-family: "Italiana", serif;
   font-weight: 100;
@@ -395,7 +394,7 @@ header.down {
   width: 700px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .calltoact {
@@ -447,7 +446,7 @@ a:link {
   display: grid;
   margin-bottom: 30px;
   line-height: 65px;
-  font-size: 45pt;
+  font-size: 60px;
   margin-top: 20px;
   width: 500;
   font-family: "Italiana", serif;
@@ -466,7 +465,7 @@ a:link {
   max-width: 700px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .parrafos p {
@@ -495,7 +494,7 @@ a:link {
   margin: 0;
   font-family: "Lato", sans-serif;
   font-weight: 200;
-  font-size: medium;
+  font-size: 17px;
   line-height: 20px;
 }
 
@@ -509,7 +508,7 @@ a:link {
   max-width: 1fr;
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  font-size: medium;
+  font-size: 17px;
 }
 
 .card2 img {
