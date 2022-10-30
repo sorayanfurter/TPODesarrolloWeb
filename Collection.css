@@ -134,12 +134,11 @@ body {
   width: 100%;
 }
 
-a:hover {
-  font-style: italic;
-  color: #d3ba87;
-}
+
 header nav a:hover {
   font-style: italic;
+  font-style: italic;
+  color: #d3ba87;
 }
 
 header {
