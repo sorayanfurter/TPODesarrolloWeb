@@ -1,0 +1,19 @@
+{
+  "name": "tpodesarrolloweb-2",
+  "version": "1.0.0",
+  "description": "tpocodoacodo",
+  "main": "Collection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorayanfurter/TPODesarrolloWeb.git"
+  },
+  "author": "Soraya Ferulano Paez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorayanfurter/TPODesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/sorayanfurter/TPODesarrolloWeb#readme"
+}
