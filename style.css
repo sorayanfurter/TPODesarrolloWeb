@@ -376,9 +376,7 @@ header.down {
   margin-bottom: 30px;
   font-size: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  
-  
+  grid-template-rows: auto; 
   
 }
 
@@ -449,9 +447,7 @@ header.down {
   grid-column-start: 4;
   grid-column-end: 5;
   margin-top: 20px;
-  
-  
-}
+ }
 
  .material-icons{
   float:left;
@@ -546,7 +542,6 @@ a:link {
   object-fit: cover;
 }
 
-
 .card4 h2 , .card5 h2 , .card6 h2 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -618,4 +613,137 @@ h4 {
   align-self: start;
   vertical-align: middle;
   line-height: 50px;
+}
+
+
+@media (max-width: 768px) {
+
+  .tituloppal h1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    font-family: "Italiana";
+    font-weight: 300;
+    margin-top: 50px 20px 0px 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+  }
+  
+
+  .content {
+    margin-top: 50px;
+  }
+
+  .titulo h1 {
+    display: grid;
+    grid-area: titulo;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    line-height: 55px;
+    font-size: 50px;
+    
+    font-family: "Italiana", serif;
+    font-weight: 100;
+   
+  }
+  
+
+  .parrafos {
+    display: grid;
+    grid-area: parrafos;
+    grid-template-rows: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: normal;
+    max-width: 700px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .containercards {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto; 
+    
+  }
+
+  .card1, .card2, .card3 {
+  
+    max-width: 1fr ;
+    font-size: medium;
+    grid-template-rows: auto;
+  }
+  
+  .content2 {
+    display: grid;
+    grid-area: content2;
+    margin-top: 30px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-template-rows: auto;
+    margin-bottom: 70px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  
+  
+  .containercards2 {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto; 
+    
+    
+  }
+
+  .titulo2 h1 {
+    display: grid;
+    grid-area: titulo;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    line-height: 50px;
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-family: "Italiana", serif;
+    font-weight: 100;
+   
+  }
+
+  .parrafos2 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-auto-rows: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: normal;
+    max-width: 700px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  
+  
+  .btn-redes {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn-redes i {
+    line-height: 30px;
+    font-size: 20px;
+    transition: 0.2s linear;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
 }
