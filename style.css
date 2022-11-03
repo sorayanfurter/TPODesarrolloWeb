@@ -357,12 +357,13 @@ header.down {
   grid-area: content;
   grid-column-start: 2;
   grid-column-end: 5;
-  grid-template-areas: "titulo titulo titulo"
-                       "parrafos parrafos parrafos"
-                       "containercards containercards containercards";
-                       
+  grid-template-areas:
+    "titulo titulo titulo"
+    "parrafos parrafos parrafos"
+    "containercards containercards containercards";
+
   margin-top: 100px;
-  
+
   grid-template-rows: auto;
   font-size: 20px;
   line-height: 20px;
@@ -371,13 +372,12 @@ header.down {
 .containercards {
   display: grid;
   grid-area: containercards;
-  gap: 30px;
+  gap: 60px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto; 
-  
+  grid-template-rows: auto;
 }
 
 .titulo h1 {
@@ -407,14 +407,17 @@ header.down {
   font-size: 20px;
 }
 
-.card1, .card2, .card3 {
-  
+.card1,
+.card2,
+.card3 {
   max-width: 1fr;
   font-size: medium;
   grid-template-rows: auto;
 }
 
-.card1 p, .card2 p, .card3 p {
+.card1 p,
+.card2 p,
+.card3 p {
   width: 1fr;
   text-align: start;
   margin: 0;
@@ -424,16 +427,19 @@ header.down {
   line-height: 20px;
 }
 
-.card1 img, .card2 img, .card3 img {
+.card1 img,
+.card2 img,
+.card3 img {
   width: 1fr;
   height: 340px;
   object-fit: cover;
 }
 
-.card1 h2 , .card2 h2 , .card3 h2 {
-  
+.card1 h2,
+.card2 h2,
+.card3 h2 {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
   font-family: "Italiana", serif;
   font-weight: 100;
   font-size: 30px;
@@ -441,18 +447,17 @@ header.down {
 }
 
 .calltoact {
-  display:grid;
+  display: grid;
   grid-area: calltoact;
   text-align: end;
   grid-column-start: 4;
   grid-column-end: 5;
   margin-top: 20px;
- }
+}
 
- .material-icons{
-  float:left;
-  margin-left:150px;
-  
+.material-icons {
+  float: left;
+  margin-left: 150px;
 }
 
 a:link {
@@ -529,29 +534,36 @@ a:link {
   grid-template-rows: auto;
 }
 
-
-.card4, .card5, .card6 {
+.card4,
+.card5,
+.card6 {
   max-width: 1fr;
   font-size: medium;
   grid-template-rows: auto;
 }
 
-.card4 img, .card5 img, .card6 img {
+.card4 img,
+.card5 img,
+.card6 img {
   width: 1fr;
   height: 480px;
   object-fit: cover;
 }
 
-.card4 h2 , .card5 h2 , .card6 h2 {
+.card4 h2,
+.card5 h2,
+.card6 h2 {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
   font-family: "Italiana", serif;
   font-weight: 100;
   font-size: 30px;
   line-height: 30px;
 }
 
-.card4 p, .card5 p, .card6 p {
+.card4 p,
+.card5 p,
+.card6 p {
   width: 1fr;
   text-align: start;
   margin: 0;
@@ -615,8 +627,33 @@ h4 {
   line-height: 50px;
 }
 
-
 @media (max-width: 768px) {
+  .header {
+    grid-area: header;
+    grid-template-columns: 1fr;
+  }
+
+  div .logo {
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .menu {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .menu.is-active {
+    grid-area: header;
+    text-align: center;
+  }
+
+  .menu__list {
+    text-align: center;
+    justify-items: center;
+  }
 
   .tituloppal h1 {
     display: grid;
@@ -632,7 +669,6 @@ h4 {
     text-align: center;
     color: #fff;
   }
-  
 
   .content {
     margin-top: 50px;
@@ -645,18 +681,16 @@ h4 {
     grid-column-end: 5;
     line-height: 55px;
     font-size: 50px;
-    
+    margin-bottom: 10px;
     font-family: "Italiana", serif;
     font-weight: 100;
-   
   }
-  
 
   .parrafos {
     display: grid;
     grid-area: parrafos;
     grid-template-rows: auto;
-    margin-top: 10px;
+
     margin-bottom: 10px;
     line-height: normal;
     max-width: 700px;
@@ -667,18 +701,18 @@ h4 {
 
   .containercards {
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: auto; 
-    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
-  .card1, .card2, .card3 {
-  
-    max-width: 1fr ;
+  .card1,
+  .card2,
+  .card3 {
+    max-width: 1fr;
     font-size: medium;
     grid-template-rows: auto;
   }
-  
+
   .content2 {
     display: grid;
     grid-area: content2;
@@ -691,14 +725,10 @@ h4 {
     line-height: 20px;
   }
 
-  
-  
   .containercards2 {
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: auto; 
-    
-    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .titulo2 h1 {
@@ -711,7 +741,6 @@ h4 {
     margin-bottom: 10px;
     font-family: "Italiana", serif;
     font-weight: 100;
-   
   }
 
   .parrafos2 {
@@ -728,8 +757,6 @@ h4 {
     font-size: 18px;
   }
 
-  
-  
   .btn-redes {
     margin-top: 10px;
     width: 30px;
@@ -745,5 +772,4 @@ h4 {
   .copyright {
     font-size: 12px;
   }
-
 }
