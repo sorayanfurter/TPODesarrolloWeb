@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 
 * {
@@ -93,7 +93,7 @@ nav {
   opacity: 0;
   visibility: hidden;
   background-attachment: scroll;
-  font-family: Raleway thin;
+  font-family: 'Raleway';
 }
 
 .menu.is-active {
