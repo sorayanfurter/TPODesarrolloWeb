@@ -655,16 +655,16 @@ h4 {
     justify-items: center;
   }
 
-  .tituloppal h1 {
+  .img-ppal h1 {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 6;
-    grid-template-columns: 1fr;
+   
     align-items: center;
-    justify-content: center;
+    margin-top: 40px;
     font-family: "Italiana";
     font-weight: 300;
-    margin-top: 50px 20px 0px 20px;
+   
     font-size: 30px;
     text-align: center;
     color: #fff;
@@ -677,8 +677,6 @@ h4 {
   .titulo h1 {
     display: grid;
     grid-area: titulo;
-    grid-column-start: 2;
-    grid-column-end: 5;
     line-height: 55px;
     font-size: 50px;
     margin-bottom: 10px;
@@ -690,13 +688,8 @@ h4 {
     display: grid;
     grid-area: parrafos;
     grid-template-rows: auto;
-
     margin-bottom: 10px;
-    line-height: normal;
-    max-width: 700px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .containercards {
@@ -744,17 +737,7 @@ h4 {
   }
 
   .parrafos2 {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-auto-rows: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    line-height: normal;
-    max-width: 700px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .btn-redes {
