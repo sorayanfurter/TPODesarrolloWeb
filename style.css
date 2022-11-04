@@ -627,7 +627,7 @@ h4 {
   line-height: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 440px) {
   .header {
     grid-area: header;
     grid-template-columns: 1fr;
